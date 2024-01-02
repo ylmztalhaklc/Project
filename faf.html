@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-faf.css">
+    <title>Fast And Furious</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="C:\Users\Talha\Desktop\Project\fon\faf-fon.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var audio = document.getElementById("backgroundMusic");
+            var toggleButton = document.getElementById("toggleButton");
+
+            toggleButton.addEventListener("click", function () {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        });
+
+    </script>
+    <div class="bar">
+
+        <ul>
+            <li style="margin-right: 20rem;margin-left: 5rem;">
+                <img src="C:\Users\Talha\Desktop\Project\images/racon2.jpg" alt="" style="text-align: left; position: static;">
+            </li>
+
+            <li>
+                <button id="toggleButton"><i class="fa-solid fa-music"></i></button>
+            </li>
+        </ul>
+
+    </div>
+    <header>
+        <div class="faf-back" style="border: 2px solid black;">
+
+        </div>
+        <div class="content">
+        </div>
+    </header>
+    <main>
+        <section id="sec-no1" style="background-color: grey; border: 2px solid black;" >
+            <div class="content" style="font-size: 25px; color: black;">
+                “Benim dostum yok, ailem var.”
+            </div>
+        </section>
+        <section id="sec-no2" style="border: 2px solid black;">
+            <ul>
+                <li>
+                    <div class="col">
+                        <img src="C:\Users\Talha\Desktop\Project\images/dodge.jpg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title">
+                                Dodge Charger R/T
+                            </h3>
+                            <p>
+                                Dominic Toretto
+                            </p>
+                            <a href="toretto.html"  class="btn" id="">İncele</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="C:\Users\Talha\Desktop\Project\images/skyline.jpg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title" style="font-size: 28px;">
+                                Nissan Skyline GT-R R34
+                            </h3>
+                            <p>
+                                Brian O'Conner
+                            </p>
+                            <a href="oconner.html"  class="btn" id="">İncele</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="C:\Users\Talha\Desktop\Project\images/mazda.jpg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title">
+                                Mazda RX-7
+                            </h3>
+                            <p>
+                                Han
+                            </p>
+                            <a href="han.html"  class="btn" id="">İncele</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="C:\Users\Talha\Desktop\Project\images/supra.jpg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title">
+                                Toyota Supra
+                            </h3>
+                            <p>
+                                Brian O'Conner v2
+                            </p>
+                            <a href="oconner2.html"  class="btn" id="">İncele</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="C:\Users\Talha\Desktop\Project\images/dodgv2.jpg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title" >
+                                Dodge Charger SRT-8
+                            </h3>
+                            <p>
+                                Dominic Toretto v2
+                            </p>
+                            <a href="toretto2.html"  class="btn" id="">İncele</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="C:\Users\Talha\Desktop\Project\images/mclaren.jpg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title">
+                                McLaren 720S
+                            </h3>
+                            <p>
+                                Deckard Shaw
+                            </p>
+                            <a href="shaw.html"  class="btn" id="">İncele</a>
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer style="color: black; border: 2px solid black;">
+        <div class="information">
+            <h2 style="font-weight: bold; font-size: 50px;">Fast And Furious</h2>
+            <p>Hızlı ve Öfkeli bir Amerikalı yasadışı sokak yarışı ve silahlı soygun merkezli, aksiyon filmleri ve diğer çeşitli medya filmlerinden oluşan bir seridir.</p>
+        </div>
+    </footer>
+</body>
+</html>

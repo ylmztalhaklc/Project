@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast And Furious / Brian O'Conner</title>
+    <link rel="stylesheet" href="C:\Users\Talha\Desktop\Project\style-cars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="C:\Users\Talha\Desktop\Project\fon\oconner-fon.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var audio = document.getElementById("backgroundMusic");
+            var toggleButton = document.getElementById("toggleButton");
+
+            toggleButton.addEventListener("click", function () {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        });
+
+    </script>
+
+    <header>
+        <h3>
+            <ul>
+                <li style="margin-right: 20rem; margin-left: 5rem;">
+                    <img src="C:\Users\Talha\Desktop\Project\images/racon2.jpg" alt="" style="text-align: left; position: static;">
+                </li>
+                <li style="padding: 2rem;">
+                    <a href="index.html" class="btn" id="">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="faf.html" class="btn" id="">Fast and Furious</a>
+                </li>
+                <li>
+                    <button id="toggleButton"><i class="fa-solid fa-music"></i></button>
+                </li>
+            </ul>
+        </h3>
+    </header>
+
+    <main>
+        <div class="araba-container">
+            <div class="container">
+                <div class="image">
+                    <img src="C:\Users\Talha\Desktop\Project\images/skyline0.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="C:\Users\Talha\Desktop\Project\images/skyline1.jpeg" alt="">
+                </div>
+                <div class="image">
+                    <img src="C:\Users\Talha\Desktop\Project\images/skyline2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="C:\Users\Talha\Desktop\Project\images/skyline3.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="C:\Users\Talha\Desktop\Project\images/skyline4.jpg" alt="">
+                </div>
+        
+                <div class="button">
+                    <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+                    <a onclick="nextimg(1)" class="next">&#10095;</a>
+                </div>
+        
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+
+            <div class="araba-bilgiler" style="border: 2px solid black;">
+                <h3 id="araba-model">Marka: Nissan</h3>
+                <h3>Seri: Skyline GT-R R34 </h3>
+                <h3>Model: 1998</h3>
+                <h3 id="fiyat">Fiyat: $125,000</h3>
+                <h3>Teknik Özellikler</h3>
+                <ul>
+                    <li>Motor: Inline-6 RB26DETT</li>
+                    <li>Turbo: 2.6 litrelik çift turbolu</li>
+                    <li>Şanzıman: 6 ileri Manuel</li>
+                    <li>Süspansiyon: Sportif Ayarlı Süspansiyon</li>
+                    <li>Fren Sistemi: Brembo frenler</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <div>
+                    <img src="C:\Users\Talha\Desktop\Project\images/oconner.jpg" alt="" class="img-f">
+                </div>
+            </li>
+            <li>
+                <div class="user-bilgi">
+                    <h1>
+                        Brian O'Conner
+                    </h1>
+                    <p>
+                        Fast And Furious serisinin ikonik ve baş karakterlerinden biri olan Brian O'Conner, seride Dominic Toretto'nun suçlarına karşı onu yakalamaya çalışan bir polistir ancak devamında Dom'la beraber iş birliği yapmıştır.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="C:\Users\Talha\Desktop\Project\script.js"></script>
+</body>
+
+</html>
